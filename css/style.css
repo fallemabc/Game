@@ -1,0 +1,286 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+  background: url(../img/game-zone.png) no-repeat center center fixed;
+  background-size: cover; 
+}
+
+.nav__menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.game__nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.menu__level {
+  width: 136px;
+  height: 136px;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.09);
+  z-index: 100;
+}
+
+.level__item {
+  width: inherit;
+  height: inherit;
+  background: url(../img/level-star.svg) no-repeat;
+  background-position: center;
+}
+
+.level__number {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 43%;
+}
+
+.menu__points {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 60px;
+  top: 35px;
+  width: 207px;
+  height: 49px;
+  background: #A0B4BE;
+  border: solid 10px #fff;
+  border-radius: 62px;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.25), 1px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 50;
+}
+
+.points__number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  padding-right: 10%;
+}
+
+.menu__lives {
+  position: absolute;
+  left: 60px;
+  top: 95px;
+  width: 193px;
+  height: 46px;
+  background: #fff;
+  border-radius: 62px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lives__box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lives__heart {
+  width: 22px;
+  height: 20px;
+  background: url(../img/lives.svg) no-repeat;
+  margin: 1em 5px;
+}
+
+.lives__heart:last-of-type, 
+.no__heart:last-of-type {
+  margin-right: 1em;
+}
+
+.no-heart {
+  width: 22px;
+  height: 20px;
+  background: url(../img/no-lives.svg) no-repeat;
+  margin: 1em 5px;
+}
+
+.btn {
+  display: inline-block;
+  height: 55px;
+  padding: 5px;
+  background: #fff;
+  font-weight: 800;
+  color: #27A8F3;
+  border: 8px solid #fff;
+  border-radius: 62px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btn:focus {
+  display: none;
+}
+
+.btn:hover {
+  background: #27A8F3;
+  color: #fff;
+}
+
+.control__start-btn {
+  min-width: 220px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+button[type="button"]:disabled {
+  color: gray;
+}
+
+.control__rules-btn {
+  width: 55px;
+  font-size: 1.3rem;
+  margin-left: 1em;
+}
+
+.game__zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.zone__box {
+  display: flex;
+  width: 920px;
+  height: 450px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.zone__mink {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 225px;
+  height: 167px;
+  background: #AE8348;
+  border-radius: 50%;
+  box-shadow: inset 0px 9px 10px rgba(0, 0, 0, 0.2);
+}
+
+.animal-box {
+  font-size: 8rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.zone__mink:nth-of-type(2) {
+  margin-top: 50px;
+}
+
+.zone__mink:nth-of-type(4) {
+  margin-left: 100px;
+}
+
+.zone__mink:nth-of-type(5) {
+  margin-right: 100px;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  background: #27A8F3;
+  font-weight: 800;
+  color: #fff;
+  border: 20px solid #fff;
+  border-radius: 65px;
+}
+
+.popup__title {
+  position: relative;
+  top: -50px;
+  width: 517px;
+  height: 96px;
+  background: #fff;
+  border-radius: 65px;
+  text-align: center;
+}
+
+
+.title__text {
+  font-size: 2.2rem;
+  line-height: 2rem;
+  color: #27A8F3;
+  text-transform: uppercase;
+}
+
+.game-over__text {
+  font-size: 1.8rem;
+  line-height: 1rem;
+  margin-bottom: 3rem;
+}
+
+.game-over__score {
+  font-size: 10rem;
+  line-height: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.game-over__score-text {
+  font-size: 4.3rem;
+  line-height: 1rem;
+}
+
+.popup {
+  display: none;
+  animation-duration: 2s;
+  animation-name: opacity;
+}
+
+.popup__ok {
+  position: relative;
+  bottom: -50px;
+  width: 235px;
+  height: 65px;
+  background: #FFE500;
+  border: 8px solid #fff;
+  color: #fff;
+  box-shadow: none;
+  font-size: 2.1rem;
+}
+
+.popup__ok:hover {
+  background: #FFC700;
+  color: #fff;
+}
+
+.popup__list {
+  width: 85%;
+  font-size: 1.3rem;
+}
+
+.popup__list li {
+  padding-bottom: 0.7rem;
+}
+
+
+@keyframes opacity {
+  from {
+    opacity: 0; 
+  }
+
+  to {
+opacity: 1;
+  }
+}
